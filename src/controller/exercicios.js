@@ -45,6 +45,16 @@ class controllerExercicios {
             res.status(500).json({ msg: e.message })
         }
         }
+
+        Get(req, res) {
+            try {
+                const resultado = ServiceExercicios.Get(req.body.Graus, req.body.Imc, req.body.Nota, req.body.Tabuada, req.body.Triangulos);
+                res.status(201).json({ resultado })
+            } catch (e) {
+                res.status(500).json({ msg: e.message })
+            }
+        }
+    
 }
 
 module.exports = new controllerExercicios()

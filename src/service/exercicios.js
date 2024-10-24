@@ -50,6 +50,13 @@ class ServiceExercicios {
       return "Escaleno";
     }
   }
+
+  Get(Graus, Imc, Nota, Tabuada, Triangulos) {
+    if (isNaN(Graus) || isNaN(Imc) || isNaN(Nota) || isNaN(Tabuada) || isNaN(Triangulos)) {
+      throw new Error("Informe os valores");
+    }
+    return Graus + Imc + Nota + Tabuada + Triangulos;
+  }
 }
 
 module.exports = ServiceExercicios;

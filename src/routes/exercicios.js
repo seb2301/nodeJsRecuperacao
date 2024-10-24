@@ -5,7 +5,7 @@ const controllerExercicios = require("../controller/exercicios.js");
 const router = express.Router();
 
 // Criando as rotas
-router.get("/", controllerExercicios.GetExercicios);
+router.get("/", controllerExercicios.Get);
 router.post("/", controllerExercicios.CreateExercicios);
 router.post("/exercicio4/", controllerExercicios.Graus);
 router.post("/exercicio10/", controllerExercicios.Imc);
