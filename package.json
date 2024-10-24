@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Recuperação",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "test": "jest"
+  },
+  "author": "Sebastiao",
+  "license": "ISC",
+  "dependencies": {
+    "expres": "^0.0.5",
+    "jest": "^29.7.0"
+  }
+}
